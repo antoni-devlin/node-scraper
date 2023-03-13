@@ -1,3 +1,5 @@
+// This runs, but I have many questions...
+
 import * as cheerio from "cheerio";
 
 function log(msg) {
@@ -14,7 +16,7 @@ async function requestAndLoad(url) {
 let $ = await requestAndLoad("https://www.gold.ac.uk/ba-journalism");
 
 const linkObjects = $("a");
-// this is a mass object, not an array
+// this is a mass object, not an array - wtf does that mean, what's a mass object??
 
 // Collect the "href" and "title" of each link and add them to an array
 const links = [];
